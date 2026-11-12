@@ -42,7 +42,7 @@ SELECT
     dw.city_name,
     dw.date_valid_std,
     AVG(dw.avg_temperature_air_2m_f) AS avg_temperature_air_2m_f
-FROM harmonized.daily_weather_v dw
+FROM harmonized.daily_weather_v_vs_code dw
 WHERE 1=1
     AND dw.country_desc = 'Germany'
     AND dw.city_name = 'Hamburg'
@@ -57,7 +57,7 @@ SELECT
     dw.city_name,
     dw.date_valid_std,
     MAX(dw.max_wind_speed_100m_mph) AS max_wind_speed_100m_mph
-FROM harmonized.daily_weather_v dw
+FROM harmonized.daily_weather_v_vs_code dw
 WHERE 1=1
     AND dw.country_desc IN ('Germany')
     AND dw.city_name = 'Hamburg'
@@ -74,7 +74,7 @@ SELECT
     dw.city_name,
     dw.date_valid_std,
     MAX(dw.max_wind_speed_100m_mph) AS max_wind_speed_100m_mph
-FROM harmonized.daily_weather_v dw
+FROM harmonized.daily_weather_v_vs_code dw
 WHERE 1=1
     AND dw.country_desc IN ('Germany')
     AND dw.city_name = 'Hamburg'
